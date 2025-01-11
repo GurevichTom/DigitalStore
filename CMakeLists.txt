@@ -7,7 +7,13 @@ add_executable(DigitalStore
     main.c
         Date.h
         Date.c
-        input.c
-        input.h
+        utils.c
+        utils.h
         Product.h
-        customer.h)
+        customer.h
+        shopping_cart.c
+        supermarket.h
+        supermarket.c
+        product.c
+        customer.c
+        shoppingitem.c)

@@ -14,4 +14,18 @@ typedef struct {
     ShoppingCart shopping_cart;
 } Customer;
 
+int initCustomer(Customer* customer);
+char* getCustomerNameFromUser(const char* prompt);
+void stringToLowercase(char* str);
+void printCustomer(const void* c);
+int initCustomerName(Customer* customer);
+int containsOnlyLetters(const char* str);
+int containsOnlyDigits(const char* str);
+int getCustomerIdFromUser(Customer* customer);
+int customerEqualsById(const void* c1, const void* c2);
+int customerEqualsByName(const void* c1, const void* c2);
+int customerEquals(const void* c1, const void* c2);
+void printCustomerShoppingCart(const Customer* customer);
+void freeCustomer(Customer* customer);
+
 #endif //CUSTOMER_H
